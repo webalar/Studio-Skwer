@@ -2,7 +2,7 @@ import '../about-2/about-2.scss';
 
 const About2 = () => {
     return (
-        <section className="section about-2">
+        <section className="section about-2" data-scroll-section>
             <div className="container flex">
                 <div className="column col-1">
                     <div className="section-header">

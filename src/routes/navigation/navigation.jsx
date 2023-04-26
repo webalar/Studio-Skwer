@@ -31,14 +31,14 @@ const Navigation = () => {
                 
                 <div className="container nav-container flex">
                     <div className="logo-container">
-                        <img src={logo} alt="" />
+                        <a href="/"><img src={logo} alt="Studio Skwer" /></a>
                     </div>
 
                     <div className="menu-container">
                         <ul className="main-menu flex">
-                            <li className="menu-item"><a href="/#colorists">Colorists</a></li>
-                            <li className="menu-item"><a href="/#contact">Contact</a></li>
-                            <li className="menu-item"><a href="/#connect">Bookings</a></li>
+                            <li className="menu-item"><a href="/#colorists" data-scroll-to>Colorists</a></li>
+                            <li className="menu-item"><a href="/#contact" data-scroll-to>Contact</a></li>
+                            <li className="menu-item"><a href="/#connect" data-scroll-to>Bookings</a></li>
                         </ul>
                     </div>
 

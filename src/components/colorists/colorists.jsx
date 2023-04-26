@@ -14,7 +14,7 @@ import '../colorists/colorists.scss';
 
 const Colorists = () => {
     return (
-       <section id="colorists" className="section">
+       <section id="colorists" className="section" data-scroll-section>
         <div className="container">
             <div className="section-header">
                 <h5 className="section-subtitle">All</h5>
