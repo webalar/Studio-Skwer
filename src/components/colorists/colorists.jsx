@@ -14,7 +14,7 @@ import '../colorists/colorists.scss';
 
 const Colorists = () => {
     return (
-       <section id="colorists" className="section" data-scroll-section>
+       <section id="colorists" className="section" >
         <div className="container">
             <div className="section-header">
                 <h5 className="section-subtitle">All</h5>
@@ -64,8 +64,8 @@ const Colorists = () => {
                             </div>
 
                             <div className="slide-body">
-                                <a href="/#" className="button button-fill">Bookings</a>
-                                <a href="/#" className="button button-outline">Contact Us</a>
+                                <a href="/#connect" className="button button-fill">Bookings</a>
+                                <a href="/#contact" className="button button-outline">Contact Us</a>
                             </div>
 
                         </SwiperSlide>

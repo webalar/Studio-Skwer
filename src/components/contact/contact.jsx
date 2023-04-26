@@ -4,7 +4,7 @@ import Socials from '../socials/socials';
 
 const Contact = () => {
     return (
-        <section id='contact' className="contact section" data-scroll-section>
+        <section id='contact' className="contact section" >
             <div className="container">
                 
                 <div className="section-header">

@@ -3,7 +3,7 @@ import Socials from '../socials/socials';
 
 const Connect = () => {
     return (
-        <section id='connect' className="connect section" data-scroll-section>
+        <section id='connect' className="connect section" >
             <div className="container">
 
                 <div className="section-header">

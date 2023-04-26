@@ -19,7 +19,7 @@ const Hero = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
     return (
-        <section className="hero" data-scroll-section>
+        <section className="hero">
             <div className="hero-container">
 
             <Swiper

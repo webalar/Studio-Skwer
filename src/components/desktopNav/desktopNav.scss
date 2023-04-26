@@ -1,0 +1,62 @@
+@import '../../index.scss';
+
+.desktopNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 99;
+    transition: all 250ms ease;
+
+    &.active {
+        background-color: $primary-black;
+
+        .nav-container {
+            padding: 25px 0;
+        }
+    }
+
+    .nav-container {
+        padding: 50px 0;
+        justify-content: space-between;
+        transition: all 250ms ease;
+
+        .logo-container {
+            flex: 1;
+
+            img {
+                width: 152px;
+            }
+        }
+
+        .menu-container {
+            flex: 2;
+
+            .main-menu {
+                justify-content: center;
+
+                .menu-item {
+                    margin-inline: 28px;
+
+                    a {
+                        font-size: 1.4em;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+        }
+
+        .nav-cta {
+            flex: 1;
+            text-align: right;
+
+            a {
+                font-size: 1.4em;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

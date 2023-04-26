@@ -29,12 +29,14 @@ $primary-white: #FFFFFF;
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  overscroll-behavior: none;
 }
 
 body {
   background-color: $primary-black;
   color: $primary-white;
   font-size: 10px;
+  overscroll-behavior: none;
 }
 
 ol, ul {

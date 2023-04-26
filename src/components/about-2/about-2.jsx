@@ -2,7 +2,7 @@ import '../about-2/about-2.scss';
 
 const About2 = () => {
     return (
-        <section className="section about-2" data-scroll-section>
+        <section className="section about-2">
             <div className="container flex">
                 <div className="column col-1">
                     <div className="section-header">
@@ -26,8 +26,8 @@ const About2 = () => {
                             <span className="stat-count">305</span>
                         </div>
                     </div>
-                    <a href="/#" className="button button-fill">Bookings</a>
-                    <a href="/#" className="button button-outline">Contact Us</a>
+                    <a href="/#connect" className="button button-fill">Bookings</a>
+                    <a href="/#contact" className="button button-outline">Contact Us</a>
                 </div>
             </div>
         </section>
