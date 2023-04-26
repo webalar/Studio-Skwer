@@ -1,11 +1,12 @@
-import '../contact-form/contactForm.scss'
+import '../contact-form/contactForm.scss';
+import arrowRight from '../../assets/icons/arrow-right.svg';
 
 const ContactForm = () => {
     return (
         <div className="form-container">
             <form action="">
                 <div className="form-input">
-                    <textarea name="message" id="message" cols="50" rows="20" value="Hey Studio Skwer,"></textarea>
+                    <textarea name="message" id="message" rows="12" value="Hey Studio Skwer,"></textarea>
                 </div>
                 <div className="form-input">
                     <label htmlFor="name">Name</label>
@@ -23,6 +24,7 @@ const ContactForm = () => {
                     <label htmlFor="inquiry">Inquiry</label>
                     <input type="text" name="inquiry" placeholder="Your Inquiry" />
                 </div>
+                <button type="submit">Submit<img src={arrowRight} alt="submit" /></button>
             </form>
         </div>
     )

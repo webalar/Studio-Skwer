@@ -3,23 +3,25 @@
 .form-container {
     form {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 350px);
+        gap: 20px;
 
         .form-input {
-            width: 150px;
+            // width: 150px;
 
             label {
                 display: block;
-                font-size: clamp(1.8em, 2vw, 2em);
+                font-size: clamp(1.4em, 2vw, 1.6em);
                 font-weight: 600;
-                margin-bottom: 10px;
+                margin-bottom: 5px;
             }
 
             input, textarea {
                 border: none;
+                outline: none;
                 border-radius: 0px;
                 background-color: transparent;
-                min-height: 40px;
+                min-height: 36px;
                 width: 300px;
                 transition: all 250ms ease;
                 font-size: clamp(1.6em, 1.8vw, 1.8em);
@@ -29,11 +31,72 @@
                 &::placeholder {
                     color: $primary-white;
                     opacity: 50%;
-                    font-size: clamp(1.6em, 1.8vw, 1.8em);
+                    font-size: clamp(16px, 2vw, 18px);
                 }
 
                 &:hover, &:focus {
                     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+                }
+
+                // &:focus {
+                //     padding-left: 10px;
+                // }
+            }
+
+            &:nth-child(1) {
+                grid-column-start: 1;
+                grid-row-start: span 2;
+                // grid-row-end: span 2;
+            }
+            &:nth-child(2) {
+                grid-column-start: 2;
+                grid-row-start: 1;
+            }
+            &:nth-child(3) {
+                grid-column-start: 3;
+                grid-row-start: 1;
+            }
+            &:nth-child(4) {
+                grid-column-start: 2;
+                grid-row-start: 2;
+                align-self: flex-end;
+            }
+            &:nth-child(5) {
+                grid-column-start: 3;
+                grid-row-start: 2;
+                align-self: flex-end;
+            }
+        }
+
+        button {
+            font-size: clamp(1.4em, 2vw, 1.6em);
+            color: $primary-white;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: max-content;
+            margin-top: 44px;
+
+            img {
+                padding-left: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .form-container {
+        form {
+            display: block;
+
+            .form-input {
+                padding: 16px 0;
+
+                input, textarea {
+                    width: 100%;
                 }
             }
         }
