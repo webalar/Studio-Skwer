@@ -1,0 +1,13 @@
+@import '../../index.scss';
+
+.social-links {
+    .social-item {
+        margin-right: 24px;
+
+        a {
+            img {
+                height: 20px;
+            }
+        }
+    }
+}

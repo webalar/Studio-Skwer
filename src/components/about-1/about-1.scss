@@ -1,0 +1,48 @@
+@import '../../index.scss';
+
+.about-1 {
+    .container {
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        .section-header-2 {
+            flex: 1;
+            padding: 0;
+
+            .section-title {
+                font-size: clamp(8em, 10vw, 15em) ;
+                text-transform: uppercase;
+            }
+        }
+
+        .section-body {
+            flex: 1;
+
+            .text-block {
+                font-size: clamp(1.4em, 1.5vw, 1.6em);
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            .tagline {
+                font-size: clamp(2.4em, 3vw, 3.2em);
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-top: 64px;
+                margin-bottom: 32px;
+            }
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .about-1 {
+        .container {
+            flex-direction: column;
+
+            .section-body {
+                padding-top: 5em;
+            }
+        }
+    }
+}

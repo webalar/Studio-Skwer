@@ -1,0 +1,23 @@
+@import '../../index.scss';
+
+section {
+    .container {
+
+        .section-header {
+            padding: 0;
+            margin-bottom: 64px;
+
+            .section-title {
+                font-size: clamp(2.4em, 3vw, 3.6em);
+                font-weight: 600;
+            }
+        }
+
+        .title-block {
+            margin-top: 96px;
+            margin-bottom: 10px;
+            font-size: clamp(1.6em, 2vw, 2em);
+            font-weight: 600;
+        }
+    }
+}

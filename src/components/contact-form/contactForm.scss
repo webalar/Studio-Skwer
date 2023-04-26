@@ -1,0 +1,41 @@
+@import '../../index.scss';
+
+.form-container {
+    form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .form-input {
+            width: 150px;
+
+            label {
+                display: block;
+                font-size: clamp(1.8em, 2vw, 2em);
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            input, textarea {
+                border: none;
+                border-radius: 0px;
+                background-color: transparent;
+                min-height: 40px;
+                width: 300px;
+                transition: all 250ms ease;
+                font-size: clamp(1.6em, 1.8vw, 1.8em);
+                color: $primary-white;
+                opacity: 50%;
+
+                &::placeholder {
+                    color: $primary-white;
+                    opacity: 50%;
+                    font-size: clamp(1.6em, 1.8vw, 1.8em);
+                }
+
+                &:hover, &:focus {
+                    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+@import '../../index.scss';
+
+.section {
+    .container {
+        width: 100%;
+
+        .section-header {
+            padding: 50px 0;
+            width: 100%;
+
+            .section-subtitle {
+                font-size: clamp(1em, 1.5vw, 1.4em);
+                font-weight: 600;
+                text-transform: uppercase;
+                padding-bottom: 8px;
+            }
+
+            .section-title {
+                font-size: clamp(2.4em, 3vw, 3.6em);
+                font-weight: 600;
+            }
+        }
+
+    }
+
+    .colorist-carousel {
+        max-width: 100vw;
+        .swiper-slide {
+            position: relative;
+            transition: all 250ms ease;
+            height: 400px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: rgba(0,0,0, 0);
+                background-blend-mode: overlay;
+                z-index: 1;
+                transition: all 250ms ease;
+            }
+            
+            &:hover {
+                &::after {
+                    background: rgba(0,0,0, 0.5);
+                }
+
+                .slide-head, .slide-body {
+                    opacity: 1;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                object-fit: cover;
+            }
+
+            .slide-head {
+                position: absolute;
+                top: 32px;
+                left: 24px;
+                z-index: 5;
+                opacity: 0;
+                transition: all 250ms ease;
+
+                .colorist-name {
+                    font-size: clamp(1.2em, 1.5vw, 1.4em);
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+            }
+
+            .slide-body {
+                position: absolute;
+                bottom: 32px;
+                left: 24px;
+                z-index: 5;
+                opacity: 0;
+                transition: all 250ms ease;
+
+                .button {
+                    display: block;
+                    width: max-content;
+
+                    &.button-fill {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+        }
+    }
+}

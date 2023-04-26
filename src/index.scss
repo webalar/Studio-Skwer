@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'Mont';
+  src: url('../src/assets/fonts/Mont-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../src/assets/fonts/Mont-Bold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../src/assets/fonts/Mont-Heavy.ttf');
+  font-weight: 800;
+}
+
+$primary-black: #000000;
+$primary-white: #FFFFFF;
+
+*, *::before,*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Mont', sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $primary-black;
+  color: $primary-white;
+  font-size: 10px;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.container {
+  max-width: min(90vw, 1400px);
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: clamp(1.2em, 1.5vw, 1.4em);
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 4px;
+
+  &.button-fill {
+    background-color: $primary-white;
+    color: $primary-black;
+    border: 1px solid $primary-white;
+  }
+
+  &.button-outline {
+    border: 1px solid $primary-white;
+  }
+}
+
+// @media (max-width: 480px) {
+//   .container {
+//     margin: 0 32px;
+//   }
+// }

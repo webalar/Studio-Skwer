@@ -1,0 +1,106 @@
+@import '../../index.scss';
+
+.about-2 {
+    .container {
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .column {
+            flex: 1;
+
+            &.col-2 {
+                text-align: right;
+            }
+
+            .section-header {
+                padding: 0;
+    
+                .section-title {
+                    font-size: clamp(2.4em, 3vw, 3.6em);
+                    font-weight: 600;
+                }
+            }
+    
+            .section-body {
+                padding-top: 32px;
+    
+                .text-block {
+                    font-size: clamp(1.4em, 1.5vw, 1.6em);
+                    font-weight: 400;
+                    line-height: 24px;
+                    padding-bottom: 16px;
+                }
+    
+                .tagline {
+                    font-size: 3.2em;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    margin-top: 64px;
+                    margin-bottom: 32px;
+                }
+            }
+
+            .stats {
+
+                .stat-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    margin-bottom: 24px;
+
+                    .stat-title {
+                        font-size: clamp(1.3em, 1.5vw, 1.4em);
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        margin-right: 20px;
+                        line-height: 18px;
+                    }
+
+                    .stat-count {
+                        font-size: clamp(2.4em, 3vw, 3.6em);
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            .button {     
+                margin-top: 96px;
+
+                &.button-fill {
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .about-2 {
+        .container {
+            flex-direction: column;
+
+            .column {
+                width: 100%;
+
+                &.col-2 {
+                    padding-top: 5em;
+                    text-align: left;
+                }
+
+                .stats {
+                    .stat-item {
+                        justify-content: flex-start;
+                    }
+                }
+
+                .button {
+                    margin-top: 50px;
+                }
+
+            }
+
+        }
+    }
+}
