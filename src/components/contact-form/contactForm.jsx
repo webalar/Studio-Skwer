@@ -1,7 +1,9 @@
+// import { Fragment, useState, useEffect } from "react";
 import '../contact-form/contactForm.scss';
 import arrowRight from '../../assets/icons/arrow-right.svg';
 
 const ContactForm = () => {
+
     return (
         <div className="form-container">
             <form action="">

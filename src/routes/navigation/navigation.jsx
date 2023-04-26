@@ -6,7 +6,7 @@ import '../navigation/navigation.scss';
 
 const Navigation = () => {
 
-     //navbar scroll when active state
+    //navbar scroll when active state
     const [navbar, setNavbar] = useState(false)
 
     //navbar scroll changeBackground function
@@ -36,14 +36,14 @@ const Navigation = () => {
 
                     <div className="menu-container">
                         <ul className="main-menu flex">
-                            <li className="menu-item"><a href="/#">Colorist</a></li>
-                            <li className="menu-item"><a href="/#">Contact</a></li>
-                            <li className="menu-item"><a href="/#">Bookings</a></li>
+                            <li className="menu-item"><a href="/#colorists">Colorists</a></li>
+                            <li className="menu-item"><a href="/#contact">Contact</a></li>
+                            <li className="menu-item"><a href="/#connect">Bookings</a></li>
                         </ul>
                     </div>
 
                     <div className="nav-cta">
-                        <a href="/#" className="button">Connect</a>
+                        <a href="/#connect" className="button">Connect</a>
                     </div>
                 </div>
 

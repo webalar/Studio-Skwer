@@ -27,6 +27,7 @@
                 font-size: clamp(1.6em, 1.8vw, 1.8em);
                 color: $primary-white;
                 opacity: 50%;
+                resize: none;
 
                 &::placeholder {
                     color: $primary-white;

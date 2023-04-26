@@ -21,13 +21,13 @@
             .info-item {
                 max-width: 450px;
 
-                .title-block {
+                .item-title {
                     font-size: clamp(1.6em, 2vw, 1.8em);
                     font-weight: 600;
                     opacity: 80%;
                 }
 
-                .text-block {
+                .item-text {
                     font-size: clamp(1.4em, 2vw, 1.6em);
                     font-weight: 400;
                     opacity: 50%;
@@ -46,6 +46,17 @@
             margin-bottom: 10px;
             font-size: clamp(1.6em, 2vw, 2em);
             font-weight: 600;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .connect {
+        .container {
+            .contact-info {
+                flex-direction: column;
+                gap: 32px;
+            }
         }
     }
 }

@@ -14,7 +14,7 @@ import '../colorists/colorists.scss';
 
 const Colorists = () => {
     return (
-       <section className="section">
+       <section id="colorists" className="section">
         <div className="container">
             <div className="section-header">
                 <h5 className="section-subtitle">All</h5>
@@ -41,7 +41,7 @@ const Colorists = () => {
                     slidesPerView: 3,
                 },
                 1440: {
-                    slidesPerView: 4,
+                    slidesPerView: 5,
                 },
                 1600: {
                     slidesPerView: 6,
