@@ -43,7 +43,7 @@ const DesktopNav = () => {
                 </div>
 
                 <div className="nav-cta">
-                    <a href="/#connect" className="button">Connect</a>
+                    <a href="/#connect" className="">Connect</a>
                 </div>
             </div>
 
