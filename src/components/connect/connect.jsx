@@ -28,7 +28,7 @@ const Connect = () => {
 
                 </div>
 
-                <div className="title-block">Follow us on</div>
+                <div className="title-block">Social</div>
 
                 <Socials />
 
