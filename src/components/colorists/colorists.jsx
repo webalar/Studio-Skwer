@@ -14,6 +14,7 @@ import '../colorists/colorists.scss';
 
 const Colorists = () => {
     return (
+        
        <section id="colorists" className="section" >
         <div className="container">
             <div className="section-header">
@@ -23,30 +24,27 @@ const Colorists = () => {
         </div>
 
         <Swiper
-            // slidesPerView={3}
+            slidesPerView={4}
             spaceBetween={0}
             speed={500}
             freeMode={true}
             // loop={true}
             autoplay={{
-                delay: 3000,
+                delay: 5000,
                 disableOnInteraction: false,
             }}
             
-            breakpoints={{
-                480: {
-                    slidesPerView: 2,
-                },
-                1024: {
-                    slidesPerView: 3,
-                },
-                1440: {
-                    slidesPerView: 5,
-                },
-                1600: {
-                    slidesPerView: 6,
-                },
-                }}
+            // breakpoints={{
+            //     480: {
+            //         slidesPerView: 2,
+            //     },
+            //     1024: {
+            //         slidesPerView: 3,
+            //     },
+            //     1440: {
+            //         slidesPerView: 4,
+            //     },
+            //     }}
             // navigation={true}
             
             modules={[Autoplay, Navigation]}

@@ -24,6 +24,25 @@ const DesktopNav = () => {
         window.addEventListener("scroll", changeBackground)
     })
 
+    const goToColorists = () => {
+        window.scrollTo({
+            top: 1000,
+            behavior: 'smooth',
+        });
+    };
+    const goToContact = () => {
+        window.scrollTo({
+            top: 4000,
+            behavior: 'smooth',
+        });
+    };
+    const goToConnect = () => {
+        window.scrollTo({
+            top: 5000,
+            behavior: 'smooth',
+        });
+    };
+
 
     return (
         <header className={navbar ? "active desktopNav" : "desktopNav"}>
@@ -35,15 +54,15 @@ const DesktopNav = () => {
 
                 <div className="menu-container">
                     <ul className="main-menu flex">
-                        <li className="menu-item"><a href="/#colorists" >Colorists</a></li>
-                        <li className="menu-item"><a href="/#contact" >Contact</a></li>
-                        <li className="menu-item"><a href="/#connect" >Bookings</a></li>
+                        <li className="menu-item"><a href="javascript:void(0)" onClick={goToColorists}>Colorists</a></li>
+                        <li className="menu-item"><a href="javascript:void(0)" onClick={goToContact}>Contact</a></li>
+                        <li className="menu-item"><a href="javascript:void(0)" onClick={goToConnect}>Bookings</a></li>
                         
                     </ul>
                 </div>
 
                 <div className="nav-cta">
-                    <a href="/#connect" className="">Connect</a>
+                    <a href="javascript:void(0)" className="" onClick={goToConnect}>Connect</a>
                 </div>
             </div>
 

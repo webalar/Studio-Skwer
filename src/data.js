@@ -1,23 +1,23 @@
 export const slides = [
     {
         "id": 1,
-        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682415228/Studio%20Skwer/idee_2_c3rphl.png",
+        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682666050/Studio%20Skwer/idee_v5v3mb.png",
     },
     {
         "id": 2,
-        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682415228/Studio%20Skwer/Rupay_1_rqfwek.png",
+        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682666050/Studio%20Skwer/Rupay_ylvra2.png",
     },
     {
         "id": 3,
-        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682415228/Studio%20Skwer/hustle_v1_1_lsf0lc.png",
+        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682666053/Studio%20Skwer/hustle_v1_memwwh.png",
     },
     {
         "id": 4,
-        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682415229/Studio%20Skwer/ThumbsUp_1_rkmjyb.png",
+        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682666052/Studio%20Skwer/ThumbsUp_d88hfe.png",
     },
     {
         "id": 5,
-        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682415228/Studio%20Skwer/Adidas_1_lieym2.png",
+        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682666051/Studio%20Skwer/Adidas_vhdnne.png",
     },
 ]
 
@@ -25,42 +25,22 @@ export const colorists = [
     {
         "id": 1,
         "name": "Vineesh Vijayan",
-        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682420313/Studio%20Skwer/Rectangle_8_ajlqpm.png",
+        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682666037/Studio%20Skwer/vineesh_sir_bnw_v1_lbgbkw.png",
     },
     {
         "id": 2,
-        "name": "Vineesh Vijayan",
-        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682420313/Studio%20Skwer/Rectangle_6_wynn9g.png",
+        "name": "Anri Adler",
+        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682666043/Studio%20Skwer/Anri_Adler_sbatns.png",
     },
     {
         "id": 3,
-        "name": "Vineesh Vijayan",
-        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682420313/Studio%20Skwer/Davide_BnW_v1_1_wdhs4h.png",
+        "name": "Davide Pini",
+        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682666039/Studio%20Skwer/Davide_v1_qrkxqy.png",
     },
     {
         "id": 4,
-        "name": "Vineesh Vijayan",
-        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682420313/Studio%20Skwer/Rectangle_8_ajlqpm.png",
-    },
-    {
-        "id": 5,
-        "name": "Vineesh Vijayan",
-        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682420313/Studio%20Skwer/Rectangle_9_e64lwt.png",
-    },
-    {
-        "id": 6,
-        "name": "Vineesh Vijayan",
-        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682420313/Studio%20Skwer/Rectangle_8_ajlqpm.png",
-    },
-    {
-        "id": 7,
-        "name": "Vineesh Vijayan",
-        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682420313/Studio%20Skwer/Rectangle_8_ajlqpm.png",
-    },
-    {
-        "id": 8,
-        "name": "Vineesh Vijayan",
-        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682420313/Studio%20Skwer/Rectangle_8_ajlqpm.png",
+        "name": "Jithin George",
+        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682666036/Studio%20Skwer/Jithin_v1_ofj5r9.png",
     },
 ]
 

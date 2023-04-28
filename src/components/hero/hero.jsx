@@ -14,9 +14,11 @@ import { Autoplay, FreeMode, Navigation, Thumbs } from "swiper";
 import '../hero/hero.scss';
 import { slides } from "../../data";
 
+
 const Hero = () => {
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
 
     return (
         <section className="hero">
@@ -30,7 +32,7 @@ const Hero = () => {
                 loop={false}
                 spaceBetween={0}
                 autoplay={{
-                    delay: 4000,
+                    delay: 5000,
                     disableOnInteraction: false,
                     }}
                 navigation={false}
@@ -61,10 +63,10 @@ const Hero = () => {
                 slidesPerView={5}
                 freeMode={true}
                 autoplay={{
-                    delay: 2500,
+                    delay: 5000,
                     disableOnInteraction: false,
                 }}
-                watchSlidesProgress={true}
+                // watchSlidesProgress={true}
                 slideToClickedSlide={true}
                 centeredSlides={true}
                 modules={[FreeMode, Navigation, Thumbs, Autoplay]}

@@ -6,24 +6,27 @@
         justify-content: space-between;
         flex-wrap: wrap;
 
+        .section-header {
+            padding-bottom: 28px;
+
+            .section-title {
+                font-size: clamp(2.4em, 3vw, 3.6em);
+                font-weight: 600;
+            }
+        }
+
+        .flex {
+            align-items: flex-start;
+        }
+
         .column {
             flex: 1;
 
             &.col-2 {
                 text-align: right;
             }
-
-            .section-header {
-                padding: 0;
-    
-                .section-title {
-                    font-size: clamp(2.4em, 3vw, 3.6em);
-                    font-weight: 600;
-                }
-            }
     
             .section-body {
-                padding-top: 32px;
     
                 .text-block {
                     font-size: clamp(1.4em, 1.5vw, 1.6em);
@@ -55,6 +58,7 @@
                         text-transform: uppercase;
                         margin-right: 20px;
                         line-height: 18px;
+                        max-width: 15ch;
                     }
 
                     .stat-count {
@@ -66,7 +70,7 @@
             }
 
             .button {     
-                margin-top: 96px;
+                margin-top: 44px;
 
                 &.button-fill {
                     margin-right: 16px;
@@ -79,7 +83,9 @@
 @media (max-width: 860px) {
     .about-2 {
         .container {
-            flex-direction: column;
+            .flex {
+                flex-direction: column;
+            }
 
             .column {
                 width: 100%;

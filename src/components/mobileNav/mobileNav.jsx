@@ -35,6 +35,25 @@ const MobileNav = () => {
         }
       }, [isMenuOpen]);
 
+    const goToColorists = () => {
+        window.scrollTo({
+            top: 1000,
+            behavior: 'smooth',
+        });
+    };
+    const goToContact = () => {
+        window.scrollTo({
+            top: 4000,
+            behavior: 'smooth',
+        });
+    };
+    const goToConnect = () => {
+        window.scrollTo({
+            top: 5000,
+            behavior: 'smooth',
+        });
+    };
+
 
     return (
         <header className={navbar ? "active mobileNav" : "mobileNav"}>
@@ -55,10 +74,10 @@ const MobileNav = () => {
                     </div>
 
                     <ul className="main-menu">
-                        <li className="menu-item"><a href="/#colorists" >Colorists</a></li>
-                        <li className="menu-item"><a href="/#contact" >Contact</a></li>
-                        <li className="menu-item"><a href="/#connect" >Bookings</a></li>
-                        <li className="menu-item"><a href="/#connect" >Connect</a></li>
+                        <li className="menu-item"><a href="/#colorists" onClick={goToColorists}>Colorists</a></li>
+                        <li className="menu-item"><a href="/#contact" onClick={goToContact}>Contact</a></li>
+                        <li className="menu-item"><a href="/#connect" onClick={goToConnect}>Bookings</a></li>
+                        <li className="menu-item"><a href="/#connect" onClick={goToConnect}>Connect</a></li>
                         
                     </ul>
                 </div>
