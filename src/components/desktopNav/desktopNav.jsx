@@ -26,19 +26,19 @@ const DesktopNav = () => {
 
     const goToColorists = () => {
         window.scrollTo({
-            top: 1000,
+            top: 850,
             behavior: 'smooth',
         });
     };
     const goToContact = () => {
         window.scrollTo({
-            top: 4000,
+            top: 3250,
             behavior: 'smooth',
         });
     };
     const goToConnect = () => {
         window.scrollTo({
-            top: 5000,
+            top: 4300,
             behavior: 'smooth',
         });
     };

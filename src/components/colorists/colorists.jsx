@@ -3,11 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 
 // import required modules
-import { Autoplay, Navigation } from "swiper";
+// import { Autoplay } from "swiper";
 import { colorists } from "../../data";
 
 import '../colorists/colorists.scss';
@@ -24,30 +22,25 @@ const Colorists = () => {
         </div>
 
         <Swiper
-            slidesPerView={4}
+            slidesPerView={1}
             spaceBetween={0}
-            speed={500}
-            freeMode={true}
-            // loop={true}
-            autoplay={{
-                delay: 5000,
-                disableOnInteraction: false,
+
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 0,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 0,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 0,
+              },
             }}
             
-            // breakpoints={{
-            //     480: {
-            //         slidesPerView: 2,
-            //     },
-            //     1024: {
-            //         slidesPerView: 3,
-            //     },
-            //     1440: {
-            //         slidesPerView: 4,
-            //     },
-            //     }}
-            // navigation={true}
-            
-            modules={[Autoplay, Navigation]}
+            // modules={[Autoplay]}
             className="colorist-carousel"
         >
 

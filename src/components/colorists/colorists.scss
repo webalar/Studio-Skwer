@@ -25,12 +25,12 @@
     }
 
     .colorist-carousel {
-        // max-width: 100vw;
+        max-width: 100vw;
 
         .swiper-slide {
             position: relative;
             transition: all 250ms ease;
-            // height: 400px;
+
 
             &::after {
                 content: '';
@@ -60,10 +60,10 @@
             }
 
             img {
+                display: block;
                 width: 100%;
                 height: 100%;
-                position: relative;
-                object-fit: cover;
+                // object-fit: cover;
             }
 
             .slide-head {
