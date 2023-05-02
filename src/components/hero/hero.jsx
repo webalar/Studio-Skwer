@@ -63,9 +63,9 @@ const Hero = () => {
                 spaceBetween={0}
                 slidesPerView={5}
                 freeMode={true}
-                // speed={1000}
+                speed={1000}
                 autoplay={{
-                    delay: 5000,
+                    delay: 4000,
                     disableOnInteraction: false,
                 }}
                 // watchSlidesProgress={true}
