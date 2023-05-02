@@ -36,6 +36,7 @@ const MobileNav = () => {
         }
       }, [isMenuOpen]);
 
+    const handleMenu = () => {setIsMenuOpen(!isMenuOpen)};
 
     return (
         <header className={navbar ? "active mobileNav" : "mobileNav"}>
@@ -45,21 +46,21 @@ const MobileNav = () => {
                     <a href="/"><img src={logo} alt="Studio Skwer" /></a>
                 </div>
 
-                <div className="menu-icon" onClick={() => {setIsMenuOpen(!isMenuOpen)}}>
+                <div className="menu-icon" onClick={handleMenu}>
                     <img src={iconMenu} alt="" className={(isMenuOpen ? 'op-0' : 'op-1')}/>
                 </div>
 
                 <div className={(isMenuOpen ? 'menu-container isOpen' : 'menu-container isClosed')}>
 
-                    <div className="close-icon" onClick={() => {setIsMenuOpen(!isMenuOpen)}}>
+                    <div className="close-icon" onClick={handleMenu}>
                         <img src={iconClose} alt="" />
                     </div>
 
                     <ul className="main-menu">
-                        <li className="menu-item"><Link to="colorists" spy={true} smooth={true} duration={200}>Colorists</Link></li>
-                        <li className="menu-item"><Link to="contact" spy={true} smooth={true} duration={200}>Contact</Link></li>
-                        <li className="menu-item"><Link to="connect" spy={true} smooth={true} duration={200}>Bookings</Link></li>
-                        <li className="menu-item"><Link to="connect" spy={true} smooth={true} duration={200}>Connect</Link></li>
+                        <li className="menu-item"><Link to="colorists" spy={true} smooth={true} duration={200} onClick={handleMenu}>Colorists</Link></li>
+                        <li className="menu-item"><Link to="contact" spy={true} smooth={true} duration={200} onClick={handleMenu}>Contact</Link></li>
+                        <li className="menu-item"><Link to="connect" spy={true} smooth={true} duration={200} onClick={handleMenu}>Bookings</Link></li>
+                        <li className="menu-item"><Link to="connect" spy={true} smooth={true} duration={200} onClick={handleMenu}>Connect</Link></li>
                         
                     </ul>
                 </div>
