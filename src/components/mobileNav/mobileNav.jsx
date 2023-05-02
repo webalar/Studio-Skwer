@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import logo from '../../assets/images/Studio_Skwer_white.svg';
 import iconMenu from '../../assets/icons/iconMenu.svg';
 import iconClose from '../../assets/icons/iconClose.svg';
@@ -35,28 +36,6 @@ const MobileNav = () => {
         }
       }, [isMenuOpen]);
 
-    const goToColorists = () => {
-        window.scrollTo({
-            top: 650,
-            behavior: 'smooth',
-        });
-        setIsMenuOpen(!isMenuOpen)
-    };
-    const goToContact = () => {
-        window.scrollTo({
-            top: 3250,
-            behavior: 'smooth',
-        });
-        setIsMenuOpen(!isMenuOpen)
-    };
-    const goToConnect = () => {
-        window.scrollTo({
-            top: 4250,
-            behavior: 'smooth',
-        });
-        setIsMenuOpen(!isMenuOpen)
-    };
-
 
     return (
         <header className={navbar ? "active mobileNav" : "mobileNav"}>
@@ -77,10 +56,10 @@ const MobileNav = () => {
                     </div>
 
                     <ul className="main-menu">
-                        <li className="menu-item"><a href="#colorists" onClick={goToColorists}>Colorists</a></li>
-                        <li className="menu-item"><a href="#contact" onClick={goToContact}>Contact</a></li>
-                        <li className="menu-item"><a href="#bookings" onClick={goToConnect}>Bookings</a></li>
-                        <li className="menu-item"><a href="#connect" onClick={goToConnect}>Connect</a></li>
+                        <li className="menu-item"><Link to="colorists" spy={true} smooth={true} duration={200}>Colorists</Link></li>
+                        <li className="menu-item"><Link to="contact" spy={true} smooth={true} duration={200}>Contact</Link></li>
+                        <li className="menu-item"><Link to="connect" spy={true} smooth={true} duration={200}>Bookings</Link></li>
+                        <li className="menu-item"><Link to="connect" spy={true} smooth={true} duration={200}>Connect</Link></li>
                         
                     </ul>
                 </div>

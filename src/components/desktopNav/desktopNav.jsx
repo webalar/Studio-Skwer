@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import logo from '../../assets/images/Studio_Skwer_white.svg';
 
 import'../desktopNav/desktopNav.scss';
@@ -24,26 +25,6 @@ const DesktopNav = () => {
         window.addEventListener("scroll", changeBackground)
     })
 
-    const goToColorists = () => {
-        window.scrollTo({
-            top: 850,
-            behavior: 'smooth',
-        });
-    };
-    const goToContact = () => {
-        window.scrollTo({
-            top: 3250,
-            behavior: 'smooth',
-        });
-    };
-    const goToConnect = () => {
-        window.scrollTo({
-            top: 4300,
-            behavior: 'smooth',
-        });
-    };
-
-
     return (
         <header className={navbar ? "active desktopNav" : "desktopNav"}>
                 
@@ -54,15 +35,15 @@ const DesktopNav = () => {
 
                 <div className="menu-container">
                     <ul className="main-menu flex">
-                        <li className="menu-item"><a href="javascript:void(0)" onClick={goToColorists}>Colorists</a></li>
-                        <li className="menu-item"><a href="javascript:void(0)" onClick={goToContact}>Contact</a></li>
-                        <li className="menu-item"><a href="javascript:void(0)" onClick={goToConnect}>Bookings</a></li>
+                        <li className="menu-item"><Link to="colorists" spy={true} smooth={true} duration={200}>Colorists</Link></li>
+                        <li className="menu-item"><Link to="contact" spy={true} smooth={true} duration={200}>Contact</Link></li>
+                        <li className="menu-item"><Link to="connect" spy={true} smooth={true} duration={200}>Bookings</Link></li>
                         
                     </ul>
                 </div>
 
                 <div className="nav-cta">
-                    <a href="javascript:void(0)" className="" onClick={goToConnect}>Connect</a>
+                    <Link to="connect" spy={true} smooth={true} duration={200} className="">Connect</Link>
                 </div>
             </div>
 

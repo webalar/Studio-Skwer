@@ -71,6 +71,7 @@
 
                 .menu-item {
                     margin-block: 44px;
+                    cursor: pointer;
 
                     a {
                         font-size: 2em;
@@ -85,6 +86,7 @@
         .nav-cta {
             flex: 1;
             text-align: right;
+            cursor: pointer;
 
             a {
                 font-size: 1.4em;

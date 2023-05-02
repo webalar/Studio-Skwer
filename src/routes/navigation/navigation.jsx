@@ -1,5 +1,4 @@
 import { Fragment, useState, useEffect } from "react";
-import { Outlet } from "react-router-dom";
 import MobileNav from "../../components/mobileNav/mobileNav";
 import DesktopNav from "../../components/desktopNav/desktopNav";
 
@@ -21,17 +20,15 @@ const Navigation = () => {
 
     return (
         <Fragment>
-            
 
             {
                 isDesktop ? (
-                    <div><DesktopNav /></div>
+                    <DesktopNav />
                 ) : (
-                    <div><MobileNav /></div>
+                    <MobileNav />
                 )
             }    
 
-            <Outlet />
         </Fragment>
     )
 }

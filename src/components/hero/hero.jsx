@@ -29,7 +29,7 @@ const Hero = () => {
                 "--swiper-navigation-color": "#fff",
                 "--swiper-pagination-color": "#fff",
                 }}
-                loop={false}
+                loop={true}
                 spaceBetween={0}
                 autoplay={{
                     delay: 5000,

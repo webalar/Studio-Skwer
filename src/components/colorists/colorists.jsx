@@ -1,3 +1,5 @@
+import { Link } from "react-scroll";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -55,8 +57,8 @@ const Colorists = () => {
                             </div>
 
                             <div className="slide-body">
-                                <a href="/#connect" className="button button-fill">Bookings</a>
-                                <a href="/#contact" className="button button-outline">Contact Us</a>
+                                <Link to="connect" className="button button-fill" spy={true} smooth={true} duration={200}>Bookings</Link>
+                                <Link to="contact" className="button button-outline" spy={true} smooth={true} duration={200}>Contact Us</Link>
                             </div>
 
                         </SwiperSlide>

@@ -37,6 +37,7 @@
 
                 .menu-item {
                     margin-inline: 28px;
+                    cursor: pointer;
 
                     a {
                         font-size: 1.4em;
@@ -51,6 +52,7 @@
         .nav-cta {
             flex: 1;
             text-align: right;
+            cursor: pointer;
 
             a {
                 font-size: 1.4em;

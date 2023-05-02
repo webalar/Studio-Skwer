@@ -1,4 +1,7 @@
-// import { useRef } from 'react';
+import { Fragment, useState, useEffect } from 'react';
+// import Navigation from '../navigation/navigation';
+import MobileNav from "../../components/mobileNav/mobileNav";
+import DesktopNav from "../../components/desktopNav/desktopNav";
 import About1 from '../../components/about-1/about-1';
 import About2 from '../../components/about-2/about-2';
 import Colorists from '../../components/colorists/colorists';
@@ -11,27 +14,52 @@ import '../home/home.scss';
 
 import { ScrollerMotion } from 'scroller-motion'
 
+
 const Home = () => {
+
+    const [isDesktop, setDesktop] = useState(window.innerWidth > 480);
+
+    const updateMedia = () => {
+        setDesktop(window.innerWidth > 480);
+    };
+
+    useEffect(() => {
+        window.addEventListener("resize", updateMedia);
+        return () => window.removeEventListener("resize", updateMedia);
+    });
 
     return (
 
-        <ScrollerMotion>
-            <main>
-                            
-                <Hero />
+        <Fragment>
+            {/* <Navigation /> */}
 
-                <Colorists />
+            {
+                isDesktop ? (
+                    <DesktopNav />
+                ) : (
+                    <MobileNav />
+                )
+            }    
 
-                <About1 />
+            <ScrollerMotion>
 
-                <About2 />
+                <main>
+                                
+                    <Hero />
 
-                <Contact />
+                    <Colorists />
 
-                <Connect />
+                    <About1 />
 
-            </main>
-        </ScrollerMotion>
+                    <About2 />
+
+                    <Contact />
+
+                    <Connect />
+
+                </main>
+            </ScrollerMotion>
+        </Fragment>
     )
 }
 

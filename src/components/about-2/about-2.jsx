@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import '../about-2/about-2.scss';
 
 const About2 = () => {
@@ -27,8 +28,8 @@ const About2 = () => {
                                 <span className="stat-count">305</span>
                             </div>
                         </div>
-                        <a href="/#connect" className="button button-fill">Bookings</a>
-                        <a href="/#contact" className="button button-outline">Contact Us</a>
+                        <Link to="connect" className="button button-fill" spy={true} smooth={true} duration={200}>Bookings</Link>
+                        <Link to="contact" className="button button-outline" spy={true} smooth={true} duration={200}>Contact Us</Link>
                     </div>
                 </div>
                 
