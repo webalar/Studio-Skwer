@@ -21,11 +21,11 @@ const About2 = () => {
                         <div className="stats">
                             <div className="stat-item">
                                 <span className="stat-title">Films color graded</span>
-                                <span className="stat-count">800</span>
+                                <span className="stat-count">990</span>
                             </div>
                             <div className="stat-item">
                                 <span className="stat-title">Creatives partnered</span>
-                                <span className="stat-count">402</span>
+                                <span className="stat-count">500</span>
                             </div>
                         </div>
                         <a href="mailto:bookings@studioskwer.com?cc=color@studioskwer.com" className="button button-fill" target='_blank' rel="noreferrer">Bookings</a>
