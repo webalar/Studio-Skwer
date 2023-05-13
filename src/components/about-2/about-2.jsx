@@ -28,7 +28,7 @@ const About2 = () => {
                                 <span className="stat-count">402</span>
                             </div>
                         </div>
-                        <a href="mailto:bookings@studioskwer.com" className="button button-fill" target='_blank' rel="noreferrer">Bookings</a>
+                        <a href="mailto:bookings@studioskwer.com?cc=color@studioskwer.com" className="button button-fill" target='_blank' rel="noreferrer">Bookings</a>
                         <Link to="contact" className="button button-outline" spy={true} smooth={true} duration={200}>Contact Us</Link>
                     </div>
                 </div>
