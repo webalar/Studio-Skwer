@@ -19,16 +19,16 @@ export const slides = [
         "title": "ThumbsUp",
         "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682666052/Studio%20Skwer/ThumbsUp_d88hfe.png",
     },
-    {
-        "id": 5,
-        "title": "Adidas",
-        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682666051/Studio%20Skwer/Adidas_vhdnne.png",
-    },
     // {
-    //     "id": 6,
-    //     "title": "Zomato",
-    //     "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1683978406/Studio%20Skwer/Zomato_olyjyv.png",
+    //     "id": 5,
+    //     "title": "Adidas",
+    //     "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682666051/Studio%20Skwer/Adidas_vhdnne.png",
     // },
+    {
+        "id": 6,
+        "title": "Idee",
+        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1683980945/Studio%20Skwer/Idee_sxkldv.png",
+    },
 ]
 
 export const colorists = [
