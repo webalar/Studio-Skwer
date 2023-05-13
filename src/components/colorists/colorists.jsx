@@ -58,7 +58,7 @@ const Colorists = () => {
 
                             <div className="slide-body">
                                 <a href="mailto:bookings@studioskwer.com?cc=color@studioskwer.com" className="button button-fill" target="_blank" rel="noreferrer">Bookings</a>
-                                <Link to="contact" className="button button-outline" spy={true} smooth={true} duration={200}>Contact Us</Link>
+                                <Link to="connect" className="button button-outline" spy={true} smooth={true} duration={200}>Contact Us</Link>
                             </div>
 
                         </SwiperSlide>
