@@ -7,7 +7,7 @@ const Socials = () => {
            {
             socials.map(item => {
                 return (
-                    <li key={item.id} className="social-item"><a href={item.url}><img src={item.icon} alt={item.name} /></a></li>
+                    <li key={item.id} className="social-item"><a href={item.url} target='_blank' rel="noreferrer"><img src={item.icon} alt={item.name} /></a></li>
                 )
             })
            }

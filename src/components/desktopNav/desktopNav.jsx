@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import logo from '../../assets/images/Studio_Skwer_white.svg';
+import dots from '../../assets/icons/dots.svg';
 
 import'../desktopNav/desktopNav.scss';
 
@@ -37,13 +38,14 @@ const DesktopNav = () => {
                     <ul className="main-menu flex">
                         <li className="menu-item"><Link to="colorists" spy={true} smooth={true} duration={200}>Colorists</Link></li>
                         <li className="menu-item"><Link to="about" spy={true} smooth={true} duration={200}>About</Link></li>
-                        <li className="menu-item"><Link to="contact" spy={true} smooth={true} duration={200}>Contact</Link></li>
+                        <li className="menu-item"><Link to="connect" spy={true} smooth={true} duration={200}>Contact</Link></li>
                         
                     </ul>
                 </div>
 
                 <div className="nav-cta">
-                    <Link to="contact" spy={true} smooth={true} duration={200} className="">Connect</Link>
+                    {/* <Link to="contact" spy={true} smooth={true} duration={200} className="">Connect</Link> */}
+                    <img src={dots} alt="Studio Skwer" />
                 </div>
             </div>
 

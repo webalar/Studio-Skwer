@@ -18,20 +18,20 @@ const Connect = () => {
 
                     <div className="info-item">
                         <div className="item-title">Studio Skwer</div>
-                        <div className="item-text"><a href="mailto:color@studioskwer.com">color@studioskwer.com</a></div>
+                        <div className="item-text"><a href="mailto:color@studioskwer.com" target='_blank' rel="noreferrer">color@studioskwer.com</a></div>
                         <div className="item-text"><a href="tel:918976089780">+91 89760 89780</a></div>
                     </div>
 
                     <div className="info-item">
                         <div className="item-title">Bookings</div>
-                        <div className="item-text"><a href="mailto:bookings@studioskwer.com">bookings@studioskwer.com</a></div>
+                        <div className="item-text"><a href="mailto:bookings@studioskwer.com" target='_blank' rel="noreferrer">bookings@studioskwer.com</a></div>
                         <div className="item-text"><a href="tel:919167865932">+91 91678 65932</a></div>
                     </div>
 
                 </div>
                 <div className="contact-info">
                     <div className="info-item">
-                        <div className="item-title">Billing Address</div>
+                        <div className="item-title">Registered Address</div>
                         <div className="item-text">Studio Skwer LLP, E -10, Nensey Complex Society Bldg. , Nr. ST Stand, Borivali East, Mumbai - 400066.</div>
                     </div>
 

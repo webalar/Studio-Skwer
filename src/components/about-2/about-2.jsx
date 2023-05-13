@@ -21,14 +21,14 @@ const About2 = () => {
                         <div className="stats">
                             <div className="stat-item">
                                 <span className="stat-title">Films color graded</span>
-                                <span className="stat-count">300</span>
+                                <span className="stat-count">800</span>
                             </div>
                             <div className="stat-item">
                                 <span className="stat-title">Creatives partnered</span>
-                                <span className="stat-count">305</span>
+                                <span className="stat-count">402</span>
                             </div>
                         </div>
-                        <Link to="connect" className="button button-fill" spy={true} smooth={true} duration={200}>Bookings</Link>
+                        <a href="mailto:bookings@studioskwer.com" className="button button-fill" target='_blank' rel="noreferrer">Bookings</a>
                         <Link to="contact" className="button button-outline" spy={true} smooth={true} duration={200}>Contact Us</Link>
                     </div>
                 </div>
