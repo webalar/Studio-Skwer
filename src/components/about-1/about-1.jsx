@@ -3,7 +3,7 @@ import Socials from '../socials/socials';
 
 const About1 = () => {
     return (
-        <section className="section about-1">
+        <section id='about' className="section about-1">
             <div className="container flex">
                 <div className="section-header-2">
                     <h1 className="section-title">Studio Skwer</h1>

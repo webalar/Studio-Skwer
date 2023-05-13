@@ -36,14 +36,14 @@ const DesktopNav = () => {
                 <div className="menu-container">
                     <ul className="main-menu flex">
                         <li className="menu-item"><Link to="colorists" spy={true} smooth={true} duration={200}>Colorists</Link></li>
+                        <li className="menu-item"><Link to="about" spy={true} smooth={true} duration={200}>About</Link></li>
                         <li className="menu-item"><Link to="contact" spy={true} smooth={true} duration={200}>Contact</Link></li>
-                        <li className="menu-item"><Link to="connect" spy={true} smooth={true} duration={200}>Bookings</Link></li>
                         
                     </ul>
                 </div>
 
                 <div className="nav-cta">
-                    <Link to="connect" spy={true} smooth={true} duration={200} className="">Connect</Link>
+                    <Link to="contact" spy={true} smooth={true} duration={200} className="">Connect</Link>
                 </div>
             </div>
 

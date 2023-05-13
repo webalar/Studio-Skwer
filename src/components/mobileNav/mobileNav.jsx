@@ -58,9 +58,9 @@ const MobileNav = () => {
 
                     <ul className="main-menu">
                         <li className="menu-item"><Link to="colorists" spy={true} smooth={true} duration={200} onClick={handleMenu}>Colorists</Link></li>
+                        <li className="menu-item"><Link to="about" spy={true} smooth={true} duration={200} onClick={handleMenu}>About</Link></li>
                         <li className="menu-item"><Link to="contact" spy={true} smooth={true} duration={200} onClick={handleMenu}>Contact</Link></li>
-                        <li className="menu-item"><Link to="connect" spy={true} smooth={true} duration={200} onClick={handleMenu}>Bookings</Link></li>
-                        <li className="menu-item"><Link to="connect" spy={true} smooth={true} duration={200} onClick={handleMenu}>Connect</Link></li>
+                        <li className="menu-item"><Link to="contact" spy={true} smooth={true} duration={200} onClick={handleMenu}>Connect</Link></li>
                         
                     </ul>
                 </div>

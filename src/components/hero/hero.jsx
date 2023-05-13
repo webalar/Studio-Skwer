@@ -47,7 +47,7 @@ const Hero = () => {
                     slides.map(slide => {
                         return (
                             <SwiperSlide key={slide.id}>
-                                <img src={slide.imageUrl} alt={slide.id} />
+                                <img src={slide.imageUrl} alt={slide.title} />
                             </SwiperSlide>
                         )
                     })
@@ -79,7 +79,7 @@ const Hero = () => {
                     slides.map(slide => {
                         return (
                             <SwiperSlide key={slide.id}>
-                                <img src={slide.imageUrl} alt={slide.id} />
+                                <img src={slide.imageUrl} alt={slide.title} />
                             </SwiperSlide>
                         )
                     })

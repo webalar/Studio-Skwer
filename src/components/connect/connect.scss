@@ -17,6 +17,7 @@
             display: flex;
             align-items: flex-start;
             gap: 64px;
+            padding-bottom: 40px;
 
             .info-item {
                 max-width: 450px;
@@ -25,13 +26,14 @@
                     font-size: clamp(1.6em, 2vw, 1.8em);
                     font-weight: 600;
                     opacity: 80%;
+                    padding-bottom: 16px;
                 }
 
                 .item-text {
                     font-size: clamp(1.4em, 2vw, 1.6em);
                     font-weight: 400;
                     opacity: 50%;
-                    padding-top: 16px;
+                    padding-bottom: 4px;
                     line-height: 24px;
 
                     a {

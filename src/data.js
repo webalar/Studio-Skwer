@@ -1,24 +1,34 @@
 export const slides = [
     {
         "id": 1,
+        "title": "Idee",
         "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682666050/Studio%20Skwer/idee_v5v3mb.png",
     },
     {
         "id": 2,
+        "title": "Rupay",
         "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682666050/Studio%20Skwer/Rupay_ylvra2.png",
     },
     {
         "id": 3,
+        "title": "Hustle V1",
         "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682666053/Studio%20Skwer/hustle_v1_memwwh.png",
     },
     {
         "id": 4,
+        "title": "ThumbsUp",
         "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682666052/Studio%20Skwer/ThumbsUp_d88hfe.png",
     },
     {
         "id": 5,
+        "title": "Adidas",
         "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682666051/Studio%20Skwer/Adidas_vhdnne.png",
     },
+    // {
+    //     "id": 6,
+    //     "title": "Zomato",
+    //     "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1683978406/Studio%20Skwer/Zomato_olyjyv.png",
+    // },
 ]
 
 export const colorists = [
@@ -29,13 +39,13 @@ export const colorists = [
     },
     {
         "id": 2,
-        "name": "Anri Adler",
-        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682666043/Studio%20Skwer/Anri_Adler_sbatns.png",
+        "name": "Davide Pini",
+        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682666039/Studio%20Skwer/Davide_v1_qrkxqy.png",
     },
     {
         "id": 3,
-        "name": "Davide Pini",
-        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682666039/Studio%20Skwer/Davide_v1_qrkxqy.png",
+        "name": "Anri Adler",
+        "imageUrl": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682666043/Studio%20Skwer/Anri_Adler_sbatns.png",
     },
     {
         "id": 4,
@@ -48,25 +58,25 @@ export const socials = [
     {
         "id": 1,
         "name": "Instagram",
-        "url": "",
+        "url": "https://www.instagram.com/studioskwer/",
         "icon": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682438196/Studio%20Skwer/instagram_cul9pi.svg"
     },
     {
         "id": 2,
         "name": "Facebook",
-        "url": "",
+        "url": "https://www.facebook.com/studioskwer",
         "icon": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682438196/Studio%20Skwer/facebook_lvaywe.svg"
     },
     {
         "id": 3,
         "name": "WhatsApp",
-        "url": "",
+        "url": "tel:918976089780",
         "icon": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682438196/Studio%20Skwer/whatsapp_mcv2rj.svg"
     },
     {
         "id": 4,
         "name": "Linkedin",
-        "url": "",
+        "url": "https://www.linkedin.com/company/studioskwer/",
         "icon": "https://res.cloudinary.com/dblaulr6d/image/upload/v1682438196/Studio%20Skwer/linkedin_fz2ebd.svg"
     },
 ]
